@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="play-style.css">
+        <script src="script.js" defer></script>
+       
+        <title>Videos</title>
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="page-title"> 30MFF</div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+
+                <div class= "nav-links">
+                    <ul>
+                        <li> <a href="index.html"><img src="media/nav_bar/home.png"> Home</a></li>
+                        <li class="current-page"> <a href="#"><img src="media/nav_bar/play.png">Play</a></li>
+                        <li> <a href="#"><img src="media/nav_bar/about_gray.png"> About</a></li>
+                        <li> <a href="#"><img src="media/nav_bar/team.png"> Team</a></li>
+                        <li> <a href="gallery.html"><img src="media/nav_bar/gallery.png"> Gallery</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+            <div class="gallery-container"> 
+                <h1>These Are Our Films</h1>
+
+                <div class="row">
+                    <!-- Column for BIG feature video-->
+                    <div class="col">
+                        <div class="feature-title">
+                            <h3>This is our video</h3>
+                        </div>
+                        <div class="feature-img">
+                            <img src="media/videos/thisisourvideo.png" width ="100%">
+                            <img src="media/videos/playButton.png" class="play-button" onclick="playVideo('media/videos/CommLabVideo.mp4')">
+                            
+                        </div>
+                    </div>
+
+                    <div class="ourvideo">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <div class="ourvideo">
+                                <img src="media/videos/thisisourvideo.png" >
+                                <img src="media/videos/playButton.png" class="play-button" onclick="playVideo('media/videos/CommLabVideo.mp4')">
+                                </div>
+                            </div>
+                            <p>This is our video</p>
+                        </div>
+                    </div>
+
+                    <!-- Column for SMALL video-->
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/videos/connect.png">
+                                <img src="media/videos/playButton.png" class="play-button" onclick="playVideo('media/videos/Money.mp4')">
+                            </div>
+                            <p>What connects us?</p>
+                        </div>
+
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/videos/jmk.png">
+                                <img src="media/videos/playButton.png" class="play-button" onclick="playVideo('media/videos/Jeongin-Maaz-Kyle.mp4')">
+                            </div>
+                            <p>Jeongin, Mazz and Kyle</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/videos/juan.png" >
+                                <img src="media/videos/playButton.png" class="play-button" onclick="playVideo('media/videos/30_MF_-_Juan_Manuel_Rodriguez.mp4')">
+                            </div>
+                            <p>Connect and Dance</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="media/videos/group4.png" >
+                                <img src="media/videos/playButton.png" class="play-button" onclick="playVideo('media/videos/Group_4.mp4')">
+                            </div>
+                            <p>Group 4</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="video-pop">
+                <div class="video-player" id=videoPlayer>
+                    <video width="100%" controls autoplay id="showing-video" >
+                        <source src="media/videos/CommLabVideo.mp4" type="video/mp4">
+                    </video>
+                    <img class="close-button" src="media/videos/cancel.png" onclick="stopVideo()">
+                </div>
+            </div>
+
+
+        </main>
+
+
+    </body>
+</html>

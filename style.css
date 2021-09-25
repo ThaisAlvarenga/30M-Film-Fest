@@ -1,0 +1,302 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+@font-face {
+    font-family: 'kaleko-book';
+    src: url(Kaleko.205.Round/Kaleko205Round-Book.ttf);
+}
+@font-face {
+    font-family:'kaleko-bold' ;
+    src: url(Kaleko.205.Round/Kaleko205Round-Bold.ttf);
+}
+@font-face {
+    font-family:'kaleko-light' ;
+    src: url(Kaleko.205.Round/Kaleko205Round-Light.ttf);
+}
+*{
+    box-sizing: border-box;
+    font-family: 'kaleko-book' ;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff3ef;
+}
+
+li a {
+    
+    font-weight: 500;
+    font-size: 16px;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #e4d6d1;
+}
+
+.page-title{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.nav-links ul{ 
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li{
+    list-style: none;
+
+}
+
+.nav-links li:hover{
+    background-color: #e4d6d1;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #808080;
+    padding: 1rem;
+    display: block;
+}
+.nav-links li a img{
+    width: 40px;
+}
+
+.nav-links li a:hover{
+    color:  #6695e4;;
+    
+}
+
+li.current-page{
+    background-color: #f8e9e4;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .90rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+.wrapper{
+    width: 60%;
+    display: grid;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    grid-template-columns: 85fr 15fr;
+
+    /*background-color: red;*/
+}
+
+ li{
+    display: inline-block;
+    padding: 15px 15px;
+}
+
+ li img:hover{
+    
+    filter: saturate(160%);
+}
+
+.menu ul{
+    justify-items: space-between;
+    /*background-color: aqua;*/
+    /*justify-self: center;*/
+}
+
+.wrapper .titleImage{
+    padding: 0;;
+    display: block;
+    text-align: center;
+    border: 3px solid #e4d6d1;
+    border-radius: 10px;
+
+    /*background-color: aqua;*/
+}
+
+h3{
+    font-family: 'kaleko-book';
+}
+
+h1{
+    font-family: 'kaleko-bold';
+    font-size: 1.8rem;
+}
+
+.titleImage img{
+    width: 23rem;
+}
+
+@media(max-width: 1450px), (max-height: 800px)
+{
+
+li img{
+    width: 10rem;
+}
+
+h3{
+    font-size: large;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.titleImage img{
+    width: 17rem;
+}
+
+
+}
+
+@media(max-width: 1024px), (max-height: 700px){
+   
+    li img{
+        width: 8rem;
+    }
+
+ li{
+    padding: 5px 5px;
+}
+    
+    h3{
+        font-size: large;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    .titleImage img{
+        width: 12rem;
+    }
+
+}
+
+@media(max-width: 670px)/*, (max-height: 500px)*/{
+    .navbar{
+        height: 3.8rem;
+    }
+
+    li img{
+        width: 3rem;
+    }
+
+ li{
+    padding: 5px 5px;
+}
+
+    
+    h3{
+        font-size: medium;
+    }
+    
+    h1{
+        font-size: 1.2rem;
+    }
+    
+    .titleImage img{
+        width: 10rem;
+    }
+
+}
+
+
+@media(max-width: 500px) {
+    .navbar{
+        height: auto;
+    }
+    .toggle-button{
+        display:flex;
+    }
+
+    .nav-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-links li{
+        text-align: center;
+    }
+    .nav-links li:hover{
+        background-color: #e4d6d1;
+    }
+
+    .nav-links li a{
+       padding: .5rem 1rem;
+    }
+
+    .nav-links.active{
+        display: flex;
+        background-color: #fff3ef;
+        z-index: 5000;
+        position: relative;
+    }
+
+    .wrapper{
+        width: 80%;
+        display: block;
+        top: 55%;
+        
+    }
+
+    .wrapper li img{
+        width: 5.9rem;
+    }
+
+    h3{
+        font-size: small;
+    }
+    
+    .menu ul{
+        /*background-color: aqua;*/
+        justify-items: center;
+        justify-content: center;
+        /*background-color: red;*/
+    }
+    
+    .titleImage img{
+        width: 15.5em;
+    }
+
+}
+
+
+@media(max-width: 350px) {
+
+    .wrapper li img{
+        width: 3.6rem;
+    }
+
+    .titleImage img{
+        width: 6em;
+    }
+
+}
