@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="ourteam-style.css">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+          <div class="page-title"> 30MFF</div>
+          <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </a>
+
+          <div class= "nav-links">
+              <ul>
+                  <li> <a href="index.html"><img src="media/nav_bar/home.png"> Home</a></li>
+                  <li> <a href="play.html"><img src="media/nav_bar/play.png">Play</a></li>
+                  <li> <a href="#"><img src="media/nav_bar/about_gray.png"> About</a></li>
+                  <li class="current-page"> <a href="#"><img src="media/nav_bar/team.png"> Team</a></li>
+                  <li> <a href="gallery.html"><img src="media/nav_bar/gallery.png"> Gallery</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+  <h2 class="object" data-value="3"><span>This Is Our</span><br>Team</h2>
+    <div class="container">
+      <div class="paragraph">
+        <p> We are a group of broke college students trying to graduate as Interactive Media major, but first
+          we have to make it through Comm Lab. That is why we created this video for the 30 Minute 
+          Film Festival (30MFF for short). We hope you enjoy our content!  <br><br>
+
+          <strong>Nouf</strong> is a student in NYUAD<br>
+          <strong>Riley</strong>is a also student in NYUAD<br>
+          <strong>Thais</strong> is a student at NYUAD and the author of this website hehehe ;)
+      </div>
+      <img src="media/team/team1.png" class="object" data-value="-2" alt="">
+      <img src="media/team/team2.png" class="object" data-value="10" alt="">
+      <img src="media/team/team3.png" class="object" data-value="8" alt="">
+    </div>
+
+    <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(value){
+      document.querySelectorAll(".object").forEach(function(move){
+
+        var moving_value = move.getAttribute("data-value");
+        var x = (value.clientX * moving_value) / 200;
+        var y = (value.clientY * moving_value) / 200;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+      });
+    }
+    </script>
+
+
+
+  </body>
+</html>
