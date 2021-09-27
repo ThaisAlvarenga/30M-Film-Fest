@@ -16,6 +16,7 @@
     font-family: 'kaleko-book' ;
 }
 
+/*general style */
 body{
     margin: 0;
     padding: 0;
@@ -213,6 +214,8 @@ video:focus{
     width: 50px;
     cursor: pointer;
 }
+
+/*make it responsive*/
 @media(max-width: 900px), (max-height:780px){
 
     .col h3{

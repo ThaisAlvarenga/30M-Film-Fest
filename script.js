@@ -3,9 +3,12 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarlinks = document.getElementsByClassName('nav-links')[0]
 
+/*When toggle button is clicked display the hamburger nav bar */
 toggleButton.addEventListener('click', () =>{
     navbarlinks.classList.toggle('active')
 })
+
+/*------------------------------------------------------------------------------- */
 
 /*Script for video gallery*/
 var videoPlayer = document.getElementById("videoPlayer");
@@ -23,12 +26,14 @@ function playVideo(file)
         videoPlayer.style.display = "block";
     }
 
+/*------------------------------------------------------------------------------- */
+
 /*Script for team page*/
 
 document.addEventListener("mousemove", parallax);
     function parallax(e){
       document.querySelectorAll(".object").forEach(function(move){
-
+          
         var moving_value = move.getAttribute("data-value");
         var x = (e.clientX * moving_value) / 250;
         var y = (e.clientY * moving_value) / 250;

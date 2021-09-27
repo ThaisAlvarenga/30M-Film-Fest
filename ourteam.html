@@ -9,6 +9,7 @@
 
   <body>
     <header>
+      <!--Navagation bar-->
       <nav class="navbar">
           <div class="page-title"> 30MFF</div>
           <a href="#" class="toggle-button">
@@ -29,7 +30,8 @@
       </nav>
   </header>
 
-  <h2 class="object" data-value="3"><span>This Is Our</span><br>Team</h2>
+    <h2 class="object" data-value="3"><span>This Is Our</span><br>Team</h2>
+    <!--Div for the actual text of the page-->
     <div class="container">
       <div class="paragraph">
         <p> We are a group of broke college students trying to graduate as Interactive Media major, but first
@@ -38,28 +40,14 @@
 
           <strong>Nouf</strong> is a student in NYUAD<br>
           <strong>Riley</strong>is a also student in NYUAD<br>
-          <strong>Thaís</strong> is a student at NYUAD and the author of this website hehehe ;)
+          <strong>Thaís</strong> is a student at NYUAD and the author of this website hehehe ;) 
+        </p> 
       </div>
+      <!--Images that will suffer from parallax effect-->
       <img src="media/team/team1.png" class="object" data-value="-2" alt="">
       <img src="media/team/team2.png" class="object" data-value="10" alt="">
       <img src="media/team/team3.png" class="object" data-value="8" alt="">
     </div>
-
-    <script type="text/javascript">
-    document.addEventListener("mousemove", parallax);
-    function parallax(value){
-      document.querySelectorAll(".object").forEach(function(move){
-
-        var moving_value = move.getAttribute("data-value");
-        var x = (value.clientX * moving_value) / 200;
-        var y = (value.clientY * moving_value) / 200;
-
-        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-      });
-    }
-    </script>
-
-
 
   </body>
 </html>

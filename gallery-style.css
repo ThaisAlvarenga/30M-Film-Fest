@@ -37,6 +37,8 @@
     color: #ffa87c;
   }
 
+  /*Navagation bad style*/
+
 .navbar{
     position: relative;
     display: flex;
@@ -100,6 +102,8 @@ li.current-page{
     background-color: #808080;
     border-radius: 10px;
 }
+
+/*Gallery style*/
   
   .image-gallery {
     width: 100%;
@@ -130,6 +134,8 @@ li.current-page{
     object-fit: cover;
     transition: all 0.5s ease;
   }
+
+  /*Hover name card style*/
   
   .image-gallery .image-box:hover img {
     transform: scale(1.1);
@@ -219,6 +225,8 @@ li.current-page{
   }
   
   @media(max-width: 500px) {
+
+    /*Hamburger Navagation bar*/
     .navbar{
         height: auto;
     }

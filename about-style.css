@@ -10,7 +10,7 @@
     font-family:'kaleko-light' ;
     src: url(Kaleko.205.Round/Kaleko205Round-Light.ttf);
 }
-
+/*general styling of page*/
          *{
          font-family:'kaleko-book';
          margin: 0;
@@ -32,7 +32,7 @@
             text-decoration: none;
             color: #ffa87c;
           }
-        
+        /*navagation bar style*/
         .navbar{
             position: relative;
             display: flex;
@@ -96,7 +96,7 @@
             background-color: #808080;
             border-radius: 10px;
         }
-          
+        /*message box style*/
         .container{
             width:450px;
             height:550px;
@@ -169,6 +169,8 @@
         .sections strong{
             color: #F25F77;
         }
+
+        /*actual messages*/
         #user1{
             padding: 10px;
             float:left;
@@ -191,7 +193,7 @@
             display: table;
             clear:both;
         }
-
+        /*make it responsive*/
         @media(max-width: 500px) {
             .navbar{
                 height: auto;
