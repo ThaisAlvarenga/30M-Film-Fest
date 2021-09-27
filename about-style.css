@@ -161,6 +161,14 @@
         h3 span{
             font-family:'kaleko-light';
         }
+
+        strong{
+            font-family:'kaleko-bold';
+        }
+
+        .sections strong{
+            color: #F25F77;
+        }
         #user1{
             padding: 10px;
             float:left;
