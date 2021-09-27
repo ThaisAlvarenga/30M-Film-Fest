@@ -7,13 +7,45 @@
 ## Process
 
 ### Home/Main Page
+Before doing the main page, I decided to experiment around with ideas on how to place things on the screen. 
+<img src="images-documentation/mainpage1.png" width="50%">
+
+After fidgeting a bit more I started to add the elements. The icons I found on the internet were not really adding to making the webpage have that cozy feel so I decided to create my own icons.
+
+<img src="images-documentation/mainpage2.png" width=50%>
+
+Once the main page looked like I had envisioned, I then worked on making the site responsive. It's not that good but it gets the job done once you get on certain measurements. 
+
+Desktop:
+<img src="images-documentation/mainpage3.png" width="80%"> 
+
+Phone:
+<img src="images-documentation/mainpage-small.png" width="25%"> 
+
+Notes from the first day:
+- It took me a whole day.
+- It was very hard to make the website responsive.
+- Using grids was useful but it also came with its perks. For instance it is very hard to position and take into consideration objects that are not within that grid. 
+- Also keeping track of what things have a certain position and relative to what they should be centered.
+- Overall, a major problem was keeping track of what was inside what, what elements inside another should be styled as part of that elements and which can be styled overall. 
+- Additionally, keeping track of files is also very important and it is very easy to miss
+- Spelling mistakes were also very common 
+- I learned how to use click on Javascript yay!
+- I wanted to have a dark mode (view mode button) option but I ended up not liking the idea. 
+
 
 ### Play Page
+What became the play page actually started as my gallery page, but as I was working on it, I realized that the layout was much better suited for the play page and thus added some javascript so that it could become interactive and play if the user clicked the play icon. One thing I struggle with after I pushed the code to GitHub was the autoplay. In my local file it worked perfectly fine but for some reason once I uploaded it, the feature video would autoplay. I also made the UI for this just so that the appearance would match the aesthetic of the rest of the website better. I also added the videos of my other classmates because I though it would be nicer than having more images of the video. 
+
+<img src="images-documentation/playButton.png">
+<img src="images-documentation/playpage.png">
 
 ### Gallery 
-
+For the gallery I decided to use a grid system by making rows and columns dividers and then placing them on a grid. I then tried to make it more complex by adding a card with the name of the video and the group members once it hovers. I really wanted to try transitions so I also incorporated them and as a final touch I added links to the projects of my classmates. 
+<img src="images-documentation/gallery.png"> 
 
 ### Team Page 
+I got the idea for the Team page after watching a <a href="https://youtu.be/ntg6tbGxP3k">video about</a> how to do parallax effect on html, css and javascript, and I thought it would be interesting to implement it but using images of ourselves instead of the planets. 
 Additionally I wanted the appearance to be similar to the way people's cameras are showcased in Zoom, but at the same time, I also wanted to have an element that showcased how we have in a way re-shaped zoom to become part of our social environment. Thus I decided to change the shape of the rectangle on zoom for a circle. 
 
 To give the design more character, I decided to make my own minimalistic drawings with a similar texture to the UI elements I did previously, instead of using screenshots from the video. At the end, I came up with this: 
@@ -22,11 +54,22 @@ To give the design more character, I decided to make my own minimalistic drawing
 - I decided to use colors that would contrast with my orginal color palette and at the same time would also compliment some of the colors from the skin or clothes that the girls are wearing. 
 
 ### About Page
+The About page was inspired by the chat in Zoom meetings. I thought that rather than have a box of text telling the user what the page is about, it would be more interesting and engaging to pretend that the people who created the website are having a chat with the user, kinda predicting the questions that the user might have and an overview of how to use the site. Making the chat scrollable, I believe, added to the interaction of this page in particular without actually having to use any script on it. 
 <img src="images-documentation/textInspiration.png" width="50%">
+
+I kept the same color palette that was used in the main menu and decided to implement the blue as a way to frame the chat and make it stand out in the screen (I originally inverted the colors but placing the blue outsided, I think, made a difference to what catches the attention first). 
+
+In progress look:
 <img src="images-documentation/aboutPage1.png" width="70%">
+
+Initial colors:
+<img src="images-documentation/orange-about.png" width="70%">
+
+Final About page: 
 <img src="images-documentation/aboutpage.png" width="70%">
 
 ## Challenges
+- Autoplay of video player (it doesn't happen on my local file but once I pushed it to GitHub it had that issue)
 
 ### To keep in mind for the future
 
