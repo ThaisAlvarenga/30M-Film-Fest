@@ -11,6 +11,7 @@
   src: url(Kaleko.205.Round/Kaleko205Round-Light.ttf);
 }
 
+/*general style*/
 *{
   margin: 0;
   padding: 0;
@@ -29,6 +30,8 @@ li a p{
   font-weight: 500;
   font-size: 16px;
 }
+
+/*navagation bar style*/
 .navbar{
   position: relative;
   display: flex;
@@ -94,7 +97,7 @@ li.current-page{
   border-radius: 10px;
 }
 
-
+/*container for images and title to be parallaxed*/
 .container{
   position: relative;
   width: 100%;
@@ -133,10 +136,14 @@ h2 span{
   letter-spacing: 10px;
 }
 
+/*text information on page*/
 .paragraph{
   position: relative;
   padding: 20px;
+
+  /*place it on top of the images*/
   z-index: 1;
+
   height: 40%;
   width: 30%;
   top: -10%;
@@ -154,6 +161,8 @@ h2 span{
   border-radius: 10px;
 
 }
+
+/*make it responsive*/
 
 @media (max-width:1000px){
   .container h2{

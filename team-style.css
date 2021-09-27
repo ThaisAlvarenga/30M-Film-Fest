@@ -11,6 +11,8 @@
     font-family:'kaleko-light' ;
     src: url(Kaleko.205.Round/Kaleko205Round-Light.ttf);
 }
+
+/*basic page styling*/
 *{
     box-sizing: border-box;
     font-family: 'kaleko-book' ;
@@ -28,6 +30,8 @@ li a p{
     font-weight: 500;
     font-size: 16px;
 }
+
+/*navagation bar*/
 .navbar{
     position: relative;
     display: flex;
@@ -93,7 +97,7 @@ li.current-page{
     border-radius: 10px;
 }
 
-
+/*backgrounf images container + title*/
 .container{
     position: relative;
     width: 100%;
@@ -150,6 +154,7 @@ li.current-page{
       font-family:'kaleko-bold' ;
   }
   
+  /*rmake it responsive*/
   @media (max-width:800px){
     .container h2{
       font-size: 60px;
