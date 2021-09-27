@@ -103,4 +103,3 @@ Final About page:
 ## Reflection
 I am very happy with how the page looks on a desktop (how it looks on an iPad or phone is debatable). I really enjoyed thinking about how the UI elements could contribute to the theme of my webpage and set a tone for it. It was very hard for me to keep track of things on the CSS files and centering things was a hazzle. I realized just how long of a route I have to follow to get proficient at making websites but I am looking forward to the possibilities of storytelling that each class creates. 
 
-<img src="images-documentation/orange-about.jpeg" width="70%">
