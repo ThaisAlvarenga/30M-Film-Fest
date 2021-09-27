@@ -6,6 +6,8 @@
 
 ## Process
 
+After some hours trying to do the styling for the original concept of the wireframe that I had, I decided to re-invent the layout I had placed originally. <a href="re-wireframing.pdf"> This is the pdf </a> in which I drew the new wireframe as well as a few notes on what I did and what I changed. 
+
 ### Home/Main Page
 Before doing the main page, I decided to experiment around with ideas on how to place things on the screen. 
 <img src="images-documentation/mainpage1.png" width="50%">
@@ -63,7 +65,7 @@ In progress look:
 <img src="images-documentation/aboutPage1.png" width="70%">
 
 Initial colors:
-<img src="images-documentation/orange-about.png" width="70%">
+<img src="images-documentation/orange-about.jpeg" width="70%">
 
 Final About page: 
 <img src="images-documentation/aboutpage.png" width="70%">
